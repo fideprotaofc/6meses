@@ -1,0 +1,245 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manu, meu amor por você é infinito ♥</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffe1e8 0%, #f9c5d1 50%, #f7a1b7 100%);
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    main {
+      background: rgba(255 255 255 / 0.95);
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px rgb(219 39 119 / 0.3);
+      max-width: 48rem;
+      width: 100%;
+      padding: 3rem 3.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 2.75rem;
+      color: #be185d;
+      user-select: none;
+      line-height: 1.1;
+      max-width: 100%;
+      word-break: break-word;
+    }
+    .heart {
+      color: #e11d48;
+      display: inline-block;
+      animation: heartbeat 1.5s infinite;
+      transform-origin: center;
+      margin-left: 0.4rem;
+      font-size: 2.75rem;
+      vertical-align: middle;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.3);
+      }
+      50% {
+        transform: scale(1);
+      }
+      75% {
+        transform: scale(1.15);
+      }
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 20rem;
+    }
+    a.button {
+      width: 100%;
+      position: relative;
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border-radius: 9999px;
+      border: 2px solid #f9a8d4;
+      background: linear-gradient(135deg, #fbcfe8 0%, #f9a8d4 100%);
+      color: #831843;
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgb(219 39 119 / 0.3);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+      user-select: none;
+      overflow: hidden;
+      z-index: 0;
+      text-align: center;
+      white-space: nowrap;
+    }
+    a.button::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background: #db2777;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+    a.button:hover,
+    a.button:focus-visible {
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgb(219 39 119 / 0.6);
+    }
+    a.button:hover::before,
+    a.button:focus-visible::before {
+      opacity: 1;
+    }
+    a.button:focus-visible {
+      outline-offset: 4px;
+      outline: 3px solid #f9a8d4;
+    }
+    footer {
+      margin-top: 3rem;
+      font-weight: 300;
+      font-size: 0.875rem;
+      color: #be185d;
+      user-select: text;
+    }
+    footer i {
+      color: #e11d48;
+      margin-left: 0.25rem;
+    }
+    /* Hearts falling animation */
+    .heart-fall {
+      position: fixed;
+      top: -50px;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+      user-select: none;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      will-change: transform, opacity;
+      z-index: 5;
+      color: #e11d48;
+      filter: drop-shadow(0 0 2px #be185d);
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    @media (max-width: 640px) {
+      main {
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+        gap: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+      .btn-container {
+        max-width: 100%;
+        gap: 1rem;
+      }
+      a.button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+      }
+      footer {
+        margin-top: 2rem;
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main role="main" aria-label="Mensagem romântica para Manu">
+    <h1>
+      EUUUUU TE AMOOOOOO MUITOOOOO MINHAAAA GOSTOSAAAAAAAA
+      <span aria-hidden="true" class="heart">❤❤❤</span>
+    </h1>
+    <div class="btn-container">
+      <a href="iloveyou.html" class="button" aria-label="Eu te amoo 1M vezes">
+        Eu te amoo 1M vezes
+      </a>
+      <a href="http://ilavayou.com.br/visualizar_rosa/41c6717b-6394-4c61-9e13-4d61dc8c9c03" target="_blank" rel="noopener noreferrer" class="button" aria-label="A flor do nosso amor">
+        A flor do nosso amor
+      </a>
+      <a href="musica.html" class="button" aria-label="Músicas">
+        músicas
+      </a>
+    </div>
+    <footer>
+      Feito com <i class="fas fa-heart" aria-hidden="true"></i> e muito carinho para a Manu.
+    </footer>
+  </main>
+
+  <script>
+    // Create falling hearts effect
+    const heartSVG = `
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" >
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+    `;
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart-fall");
+      heart.style.left = Math.random() * window.innerWidth + "px";
+      heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+      heart.style.fontSize = (12 + Math.random() * 18) + "px";
+      heart.style.opacity = 0.7 + Math.random() * 0.3;
+      heart.innerHTML = heartSVG;
+      document.body.appendChild(heart);
+
+      // Remove heart after animation
+      heart.addEventListener("animationend", () => {
+        heart.remove();
+      });
+    }
+
+    // Create hearts continuously
+    setInterval(() => {
+      createHeart();
+    }, 300);
+  </script>
+</body>
+</html>
